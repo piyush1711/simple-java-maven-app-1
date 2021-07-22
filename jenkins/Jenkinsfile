@@ -20,7 +20,6 @@ pipeline {
         stage('Deliver') {
             steps {
                 sh './jenkins/scripts/deliver.sh'
-                sh 'hangoutsNotify message: "This message is from a pipeline!",token: "yzhtvY0dhgMuU3B3AdcBqUJas",threadByJob: false'
             }
         }
     }
